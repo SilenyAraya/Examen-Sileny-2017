@@ -1,0 +1,43 @@
+-- Table: public.compras
+
+-- DROP TABLE public.compras;
+
+CREATE TABLE public.compras
+(
+    nombre_usuario character varying(15) COLLATE pg_catalog."default",
+    edad integer,
+    sexo character varying(15) COLLATE pg_catalog."default",
+    identificador character varying(15) COLLATE pg_catalog."default",
+    fecha character varying(20) COLLATE pg_catalog."default"
+)
+WITH (
+    OIDS = FALSE
+)
+TABLESPACE pg_default;
+
+ALTER TABLE public.compras
+    OWNER to postgres;
+
+
+
+
+
+
+-- Table: public.productos
+
+-- DROP TABLE public.productos;
+
+CREATE TABLE public.productos
+(
+    identificador character varying(15) COLLATE pg_catalog."default",
+    nombre character varying(15) COLLATE pg_catalog."default",
+    precio integer,
+    tipo character varying(15) COLLATE pg_catalog."default"
+)
+WITH (
+    OIDS = FALSE
+)
+TABLESPACE pg_default;
+
+ALTER TABLE public.productos
+    OWNER to postgres;
